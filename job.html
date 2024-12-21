@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="job.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header  NAV-BAR Section -->
+    <header>
+        <div class="logo">
+            <h1>HR Crew</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+
+                <!-- Dropdown 1: Pages -->
+                <div class="dropdown">
+                    <a class="dropbtn">Pages <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <a href="#addEmployee">Jobs page</a> <br>
+                            <a href="#manageEmployee">Job details</a> <br>
+                            <a href="#Employers"> Employers</a> <br>
+                            <a href="#employers details"> Employers details</a>
+                        </ul>
+                        <ul>
+                            <a href="#candidates"> Candidates</a> <br>
+                            <a href="#candidates Details"> candidates Details</a><br>
+                            <a href="#timeline"> Timeline</a><br>
+                            <a href="#FAQ page"> FAQ page</a>
+                        </ul>
+                        <ul>
+                            <a href="#coming soon"> Coming soon</a><br>
+                            <a href="#404 error"> 404-error </a><br>
+                            <a href="#searchresults"> search</a><br>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Dropdown 3: Blog -->
+                <div class="dropdown">
+                    <a class="dropbtn">Blog <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#applyLeave">blogpage</a>
+                        <a href="#blog detail">blogdetails</a>
+                    </div>
+                </div>
+
+                <!-- Dropdown 4: Accounts  -->
+                <div class="dropdown">
+                    <a class="dropbtn">Accounts <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#markAttendance">Login profile</a>
+                        <a href="#attendanceReport">Signup/New user</a>
+                    </div>
+                </div>
+                </div>
+                <a href="#" class="action_btn">Job Post</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Starting from your Dream Jobs</h2>
+        <p>High Performance job board HTML Responsive Theme</p><br>
+
+        <!-- Home Search-bar Section -->
+        <label for="email"><a href="#" style="color: black;">Designing | software developer | Customer
+                service</a></label><br> <br>
+        <div class="search-box">
+            <select name="categories" id="categories">
+                <option value="">Select Category</option>
+                <option value="technology">Designing</option>
+                <option value="science">Development</option>
+                <option value="art">Software developer</option>
+                <option value="business">.Net developer</option>
+                <option value="business">Customer Services</option>
+                <option value="business">Human Resource</option>
+                <option value="business">IT(CSE)</option>
+            </select>
+
+            <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="us">Australia</option>
+                <option value="uk">London</option>
+                <option value="ca">India</option>
+                <option value="au">America</option>
+                <option value="au">Bangladesh</option>
+                <option value="au">Saudi Arabia</option>
+                <option value="au">SriLanka</option>
+            </select>
+
+            <input type="text" placeholder="Search keyword...">
+            <button type="button">Search</button>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2><u><i>Explore categories</i></u></h2>
+        <div class="service-item" style="background-color:bisque;">
+            <h3>Web designer</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color:bisque;">
+            <h3>Customer services</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color: bisque;">
+            <h3>Digital services</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color: bisque;">
+            <h3>Development</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color: bisque;">
+            <h3>Automotive</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color:bisque">
+            <h3>Engineering</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color:bisque">
+            <h3>Java developer</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color:bisque">
+            <h3>Software trainee</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color:bisque">
+            <h3>Food service</h3>
+            <p>2 openings</p>
+        </div>
+        <div class="service-item" style="background-color: bisque;">
+            <h3>App developer</h3>
+            <p>2 openings</p>
+        </div>
+    </section>
+    <div class="container">
+        <h1>Featured Jobs</h1>
+        <br>
+        <br>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('recent')">Recent Jobs</button>
+            <button class="tab-btn" onclick="showTab('updated')">Updated Jobs</button>
+        </div>
+        <br>
+
+        <!-- Recent Jobs -->
+        <div class="jobs-container" id="recent-jobs">
+            <div class="job-card">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/job4.png"
+                    alt="">
+                <div class="job-info-left">
+                    <h2> Web Designer</h2>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt location-icon"></i><strong>Location:</strong> London
+                    </div>
+                </div>
+                <div class="job-info-right">
+                    <div><strong>Type:</strong> Full Time</div>
+                    <div><strong>Time:</strong> 3 weeks ago</div>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/job3.png"
+                    alt="">
+                <div class="job-info-left">
+                    <h2>Java Developer</h2>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt location-icon"></i><strong>Location:</strong> London
+                    </div>
+                </div>
+                <div class="job-info-right">
+                    <div><strong>Type:</strong> Full Time</div>
+                    <div><strong>Time:</strong> 3 weeks ago</div>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/job2.png"
+                    alt="">
+                <div class="job-info-left">
+                    <h2>UI/UX designer</h2>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt location-icon"></i><strong>Location:</strong> London
+                    </div>
+                </div>
+                <div class="job-info-right">
+                    <div><strong>Type:</strong> Full Time</div>
+                    <div><strong>Time:</strong> 3 weeks ago</div>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/job1.png"
+                    alt="">
+                <div class="job-info-left">
+                    <h2>UI/UX designer</h2>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt location-icon"></i><strong>Location:</strong> London
+                    </div>
+                </div>
+                <div class="job-info-right">
+                    <div><strong>Type:</strong> Full Time</div>
+                    <div><strong>Time:</strong> 3 weeks ago</div>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- More job cards here... -->
+        </div>
+
+        <!-- Updated Jobs -->
+        <div class="jobs-container" id="updated-jobs" style="display: none;">
+            <div class="job-card">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/job1.png"
+                    alt="">
+                <div class="job-info-left">
+                    <h2>Social Media Manager</h2>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt location-icon"></i><strong>Location:</strong> London
+                    </div>
+                </div>
+                <div class="job-info-right">
+                    <div><strong>Type:</strong> Part-time</div>
+                    <div><strong>Time:</strong> 2 weeks ago</div>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/job2.png"
+                    alt="">
+                <div class="job-info-left">
+                    <h2>Social Media Manager</h2>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt location-icon"></i><strong>Location:</strong> London
+                    </div>
+                </div>
+                <div class="job-info-right">
+                    <div><strong>Type:</strong> Part-time</div>
+                    <div><strong>Time:</strong> 2 weeks ago</div>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/job3.png"
+                    alt="">
+                <div class="job-info-left">
+                    <h2>Social Media Manager</h2>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt location-icon"></i><strong>Location:</strong> London
+                    </div>
+                </div>
+                <div class="job-info-right">
+                    <div><strong>Type:</strong> Part-time</div>
+                    <div><strong>Time:</strong> 2 weeks ago</div>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/job4.png"
+                    alt="">
+                <div class="job-info-left">
+                    <h2>Social Media Manager</h2>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt location-icon"></i><strong>Location:</strong> London
+                    </div>
+                </div>
+                <div class="job-info-right">
+                    <div><strong>Type:</strong> Part-time</div>
+                    <div><strong>Time:</strong> 2 weeks ago</div>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <!-- More job cards here... -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <section class="job-section">
+            <div class="job-content">
+                <h2>Looking for resources? Want to apply for a Job?</h2>
+                <p>
+                    Phasellus aliquam sit amet justo eget sollicitudin. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Suspendisse efficitur orci urna. In et augue ornare, tempor massa in, luctus
+                    sapien.
+                    Proin a diam et dui fermentum molestie vel id neque. Donec sed tempus enim, a congue risus.
+                    Pellentesque euismod massa a quam viverra interdum. Vivamus vitae euismod magna.
+                </p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-image">
+                <img src="https://p.w3layouts.com/demosWTR/Freedom/25-04-2020/hr-crew-freedom-demo_Free/422566165/web/assets/images/b5.jpg"
+                    alt="Team Working">
+            </div>
+        </section>
+        <br>
+        <br>
+        <!--Latest News-->
+        <section id="news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="content">
+                    <div class="one">
+                        <img src="./pics/news 1.jpg" alt="" width="300px" height="150px">
+                        <h3>December 2024</h3>
+                        <p>What to wear a job interview</p>
+                        <p>Wear clean, presentable clothing that fits well and is free of stains.
+                            Avoid anything too casual, revealing, or distracting. </p>
+                    </div>
+
+                    <div class="one">
+                        <img src="./pics/news2.jpg" alt="" width="300px" height="150px">
+                        <h3>November 2024</h3>
+                        <p>Resume Writing Do's and Dont's</p>
+                        <p>Tailor Your Resume for Each Job Posting.Use Clear, Concise Language.</p>
+                    </div>
+                    <div class="one">
+                        <img src="./pics/awards.jpg" alt="" width="300px" height="150px">
+                        <h3>October 2024</h3>
+                        <p>Achievements</p>
+                        <p>HR Crew Wins Industry Excellence Award</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>Categories List</h3>
+                    <p>Java Developer</p>
+                    <p>Python Developer</p>
+                    <p>Web designer</p>
+
+                </div>
+                <div class="footer-content">
+                    <h3>Job Locations</h3>
+                    <ul class="list">
+                        <li><a href="">United States</a></li>
+                        <li><a href="">Australia</a></li>
+                        <li><a href="">SriLanka</a></li>
+                        <li><a href="">Saudhi Arabia</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; 2024 HR Crew . All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="job.js"></script>
+</body>
+
+</html>
