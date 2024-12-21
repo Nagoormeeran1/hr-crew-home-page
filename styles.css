@@ -1,0 +1,565 @@
+ /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #ffffff;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    position:sticky;
+    top: 0px;
+    z-index: 1000;/*Ensure navbar is on top*/
+  }
+  
+  header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dropdown Container */
+   .dropdown {
+              float: left;
+              overflow: hidden;
+          } 
+  .dropdown .dropbtn {
+              font-size: 16px;
+              border: none;
+              outline: none;
+              color: white;
+              padding: 14px 16px;
+              background-color: inherit;
+              font-family: inherit;
+              margin: 0;
+          }
+  .dropdown:hover .dropbtn {
+              text-decoration: underline;
+              color: white;
+          }
+  /* Dropdown Content (Hidden by default) */
+  .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #fff;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+              z-index: 1;
+          }
+  
+  .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+          }
+  
+  .dropdown-content a:hover {
+              background-color:azure;
+              color: black;
+          }
+  
+  /* Show the dropdown menu when hovering */
+  .dropdown:hover .dropdown-content {
+              display: block;
+          }
+  
+  /* Responsive design */
+    @media screen and (max-width: 600px) {
+  .navbar a, .dropdown {
+                  float: none;
+                  width: 100%;
+                  text-align: left;
+              }
+  
+  .dropdown-content {
+                  width: 100%;
+              }
+          }
+  
+  .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  .action_btn {
+    background-color: red;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 4px;
+  }
+  .action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+  }
+  
+  /* Home Section */
+  .hero {
+    background: url(./images/HR.webp);
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    height: fit-content;
+    box-shadow: #333;
+  }
+  .hero h2 {
+    font-size: 43px;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 20px;
+    font-weight: bolder;
+    color: darkslategray;
+  }
+  
+  /* search box dropdown section */
+  .search-box {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px
+  }
+  select, input[type="text"] {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 16px;
+  }
+  select {
+      min-width: 150px;
+  }
+  input[type="text"] {
+       flex: 1;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover{
+    scale: 1.03;
+  }
+  
+  /* Services Section */
+  .services {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .services h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .service-item {
+    background-color: white;
+    padding: 30px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .service-item h3 {
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+  .service-item h3:hover{
+    color:red;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+  }
+  .service-item:hover {
+    scale: 1.03;
+  }
+ 
+ /* Minimal styles for display */
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-emphasis-color: black;
+    padding-top: 80px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Underline styling for h1 (Reduced thickness) */
+h1::after {
+    content: '';
+    position: absolute;
+    right: 45%;
+    bottom: -6px; /* Reduced distance */
+    width: 12%;
+    height: 3px; /* Reduced thickness */
+    background-color: orange;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 4px;
+    border-style: groove;
+    transition: background-color 0.3s;
+    color: #00000f;
+}
+
+.tab-btn.active {
+    background-color: rgb(0, 0, 0);
+    color: #fff7f7;
+}
+
+.jobs-container {
+    display: none;
+}
+
+/* Increased size for medium job card */
+.job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid transparent;
+    border-left-color: orange;
+    border-style: groove;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+    transform: translateY(10px);
+    position: relative;
+}
+
+/* Hover Animation */
+.job-card:hover {
+    transform: translateY(-20px); /* Lift the card */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    border-color: orange;
+}
+
+/* Left side: Job Title and Location */
+.job-info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.job-info-left h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    text-align: center;
+    color: purple;
+}
+
+.job-info-left .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.job-info-left .location i {
+    margin-right: 5px;
+}
+
+/* Right side: Time and Type */
+.job-info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    width: 45%;
+    font-size: 14px;
+}
+
+.job-info-right .details div {
+    margin-bottom: 5px;
+}
+
+/* Apply button styling */
+.apply-btn {
+    border-color: orange;
+    color: #fff;
+    border: none;
+    border-color: green;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.apply-btn:hover {
+    border-color: orange;
+    color: white;
+}
+
+.job-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.location-icon {
+    margin-right: 5px;
+    color: green;
+}
+.image-content{
+    float:right;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+
+.job-section {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.job-content {
+flex: 1;
+padding-right: 20px;
+}
+
+.job-content h1 {
+font-size: 2rem;
+margin-bottom: 15px;
+color: #333;
+}
+
+.job-content p {
+font-size: 1rem;
+margin-bottom: 20px;
+color: #555;
+}
+
+.apply-btn {
+display: inline-block;
+background-color: #ff4d4d;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+}
+
+.apply-btn:hover {
+background-color: #e63939;
+}
+
+.job-image {
+flex: 1;
+}
+
+.job-image img {
+width: 100%;
+border-radius: 10px;
+}
+.one:hover{    
+    transform: scale(1.05);      
+}
+#news {
+    padding: 2rem 0;
+}
+#news h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.one {
+    background-color:whitesmoke;
+    color: rgb(16, 16, 16);    
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;   
+}
+.one h3 {
+    margin-bottom: 1rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(2, 79, 131);
+}
+footer{
+  background: #00000f;
+  padding-top: 50px;
+}
+.footer-container{
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.footer-content{
+  width: 33.3%;
+  color: white;
+}
+h5{
+  font-size: 28px;
+  margin-bottom: 15px;
+   text-align: center;
+   color: white;
+}
+.footer-content p{
+  width:190px;
+  margin: auto;
+  padding: 7px;
+  color: white;
+}
+.footer-content ul{
+  text-align: center;
+}
+.list{
+  padding: 0;
+}
+.list li{
+  width: auto;
+  text-align: center;
+  list-style-type:none;
+  padding: 7px;
+  position: relative;
+  color: white;
+}
+.list li::before{
+  content: '';
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #95e0e2;
+  transition-duration: .5s;
+}
+.list li:hover::before{
+  width: 70px;
+}
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.social-icons i{
+  color: white;
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #f18930;
+}
+.social-icons i:hover{
+  color: #f18930;
+}
+.bottom-bar{
+  background: #87dcd6;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+.bottom-bar p{
+  color: #343434;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+}
